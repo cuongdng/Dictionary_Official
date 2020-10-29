@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../css/MainController.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <AnchorPane id="apListview" prefHeight="580.0" prefWidth="263.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button fx:id="btSearch" layoutX="191.0" layoutY="14.0" mnemonicParsing="false" text="Search" textFill="WHITE" AnchorPane.rightAnchor="10.599999999999994" AnchorPane.topAnchor="14.0" />
+            <TextField id="tfSearch" fx:id="tfSearchedWord" layoutX="10.0" layoutY="15.0" prefHeight="26.0" prefWidth="166.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="15.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextField>
+            <ListView id="lvMeaning" fx:id="lvWords" layoutX="3.0" layoutY="52.0" prefHeight="518.0" prefWidth="243.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="52.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ListView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="apMeaning" layoutX="227.0" layoutY="10.0" prefHeight="580.0" prefWidth="607.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TextArea id="taExplain" fx:id="taMeaning" disable="true" editable="false" layoutX="14.0" layoutY="52.0" prefHeight="508.0" prefWidth="580.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <Button fx:id="btEdit" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" text="Edit" textFill="WHITE" />
+            <Button fx:id="btnAdd" layoutX="73.0" layoutY="14.0" mnemonicParsing="false" text="Add" textFill="WHITE" />
+            <Button fx:id="btnDelete" layoutX="125.0" layoutY="14.0" mnemonicParsing="false" text="Delete" textFill="WHITE" />
+            <Label fx:id="lblDelete" layoutX="204.0" layoutY="15.0" text="Deleted!">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <WebView fx:id="wvMeaning" fontScale="1.1" layoutX="15.0" layoutY="54.0" prefHeight="508.0" prefWidth="580.0" />
+            <ImageView fx:id="imgSpeaker" fitHeight="34.0" fitWidth="28.0" layoutX="555.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/speaker.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

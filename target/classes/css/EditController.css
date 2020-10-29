@@ -1,0 +1,15 @@
+.root {
+    -fx-background-color: #a2d471;           
+    -fx-font-family: "Time New Roman";
+    -fx-font-size: 14px;
+}
+.button {
+    -fx-font-family: "Time New Roman";
+    -fx-background-radius: 8px;
+    -fx-background-color: linear-gradient(to bottom right, #6e8efb, #a777e3);
+    -fx-text-color: white;
+}
+
+.button:hover {
+    -fx-background-color: rgb(36, 209, 36);
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="199.0" prefWidth="323.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddController">
+   <children>
+      <TextField fx:id="tfNewWord" alignment="CENTER" layoutX="87.0" layoutY="32.0" />
+      <TextField fx:id="tfMeaning" alignment="CENTER" layoutX="87.0" layoutY="83.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="36.0" text="New word" />
+      <Label alignment="CENTER" layoutX="17.0" layoutY="87.0" text="Meaning" />
+      <Button fx:id="btnAdd" layoutX="142.0" layoutY="124.0" mnemonicParsing="false" text="Add" />
+      <Label fx:id="lblSuccess" layoutX="120.0" layoutY="159.0" text="Add Successfully!" />
+      <Label fx:id="lblFail" layoutX="138.0" layoutY="159.0" text="Add Fail!" />
+   </children>
+</AnchorPane>

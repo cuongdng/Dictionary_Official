@@ -1,0 +1,43 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #6e8efb, #a777e3);           
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 14px;
+}
+
+#apListview {
+    -fx-font-size: 14px;
+    -fx-background-color:  #a2d471;
+    -fx-background-radius: 2px;
+}
+
+#apMeaning {
+    -fx-background-color:  #a2d471;
+    -fx-background-radius: 2px;
+}
+
+#tfSearch {
+    -fx-background-radius: 8px;
+}
+
+#lvMeaning {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-family: "Time New Roman";
+    -fx-background-color: white;
+}
+
+#taExplain {
+    -fx-background-radius: 8px; 
+    -fx-border-radius: 8px;
+}
+
+.button {
+    -fx-font-family: "Time New Roman";
+    -fx-background-radius: 8px;
+    -fx-background-color: linear-gradient(to bottom right, #6e8efb, #a777e3);
+    -fx-text-color: white;
+}
+
+.button:hover {
+    -fx-background-color: rgb(36, 209, 36);
+}
