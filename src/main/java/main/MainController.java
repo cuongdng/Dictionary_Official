@@ -37,6 +37,9 @@ public class MainController implements Initializable {
     public Button btnDelete;
 
     @FXML
+    public Button btnTrans;
+
+    @FXML
     public Label lblDelete;
 
     @FXML
@@ -143,6 +146,20 @@ public class MainController implements Initializable {
             }
             WebEngine webEngine = wvMeaning.getEngine();
             webEngine.loadContent(DictionaryManagement.dictionaryLookup(curWord));
+        });
+
+        //Open Trans Window
+        btnTrans.setOnMouseClicked(event -> {
+            Stage addWindow = new Stage();
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/fxml/TranslateWindow.fxml"));
+                addWindow.setTitle("Transliterate");
+                addWindow.setScene(new Scene(root, 600, 450));
+                addWindow.getIcons().add(new Image(Main.class.getResourceAsStream("/images/icon.png")));
+                addWindow.show();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
         });
 
         //Click tu tren list
